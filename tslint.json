@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-immutable",
+    "tslint-config-prettier"
+  ],
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "prettier": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
