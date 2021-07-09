@@ -8,6 +8,4 @@ import router from './router';
 import reducer from './reducer';
 import sagas from './sagas';
 
-import { State } from './interfaces';
-
-export { actions, components, containers, router, reducer, constants, sagas, State };
+export { actions, components, containers, router, reducer, constants, sagas };
