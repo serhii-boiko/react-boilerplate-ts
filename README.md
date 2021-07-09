@@ -10,15 +10,15 @@
 [yarn docs](https://yarnpkg.com/lang/en/docs/install/)
         
 ### Provides
-- React 16.12.0
-- React-Redux 7.1.3
-- React-Router 5.1.2
-- React-Intl 3.12.0
+- React 17.0.2
+- React-Redux 7.2.4
+- React-Router 5.2.0
+- React-Intl 5.20.4
 
 ### Engines
 - Node.JS 12.15.0
 - npm 6.13.4
-- yarn": 1.21.1
+- yarn: 1.21.1
 
 ### Development
 - webpack-dev-server
@@ -27,7 +27,7 @@
 - redux-logger
 
 ### Building
-- WebPack 4
+- WebPack 5
 - Babel 7
 - yarn
 - webpack-bundle-analyzer
@@ -189,65 +189,70 @@ WARNING: Do not store any secrets (such as private API keys) in your React app!
 ### Dependencies and dev-dependencies from package.json.
 ```json
 {
-   "dependencies": {
-     "@babel/runtime": "^7.8.4",
-     "connected-react-router": "^6.6.1",
-     "husky": "^4.2.1",
-     "lint-staged": "^10.0.7",
-     "react": "^16.12.0",
-     "react-dom": "^16.12.0",
-     "react-intl": "2",
-     "react-redux": "^7.1.3",
-     "react-router-dom": "^5.1.2",
-     "redux": "^4.0.5",
-     "redux-devtools-extension": "^2.13.8",
-     "redux-logger": "^3.0.6",
-     "redux-saga": "^1.1.3",
-     "styled-components": "^5.0.1"
-   },
-   "devDependencies": {
-     "@babel/core": "^7.8.4",
-     "@babel/plugin-proposal-class-properties": "^7.8.3",
-     "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
-     "@babel/plugin-transform-runtime": "^7.8.3",
-     "@babel/preset-env": "^7.8.4",
-     "@babel/preset-react": "^7.8.3",
-     "@babel/preset-typescript": "^7.8.3",
-     "@types/history": "^4.7.5",
-     "@types/react": "^16.9.19",
-     "@types/react-dom": "^16.9.5",
-     "@types/react-hot-loader": "^4.1.1",
-     "@types/react-intl": "2.3.18",
-     "@types/react-redux": "^7.1.7",
-     "@types/react-router-dom": "^5.1.3",
-     "@types/redux-logger": "^3.0.7",
-     "babel-loader": "^8.0.6",
-     "css-loader": "^3.4.2",
-     "file-loader": "^5.0.2",
-     "html-webpack-harddisk-plugin": "^1.0.1",
-     "html-webpack-plugin": "^3.2.0",
-     "less-loader": "^5.0.0",
-     "mini-css-extract-plugin": "^0.9.0",
-     "node-sass": "^4.13.1",
-     "optimize-css-assets-webpack-plugin": "^5.0.3",
-     "prettier": "^1.19.1",
-     "sass-loader": "^8.0.2",
-     "script-ext-html-webpack-plugin": "^2.1.4",
-     "simple-progress-webpack-plugin": "^1.1.2",
-     "style-loader": "^1.1.3",
-     "terser-webpack-plugin": "^2.3.4",
-     "tslint": "^6.0.0",
-     "tslint-config-prettier": "^1.18.0",
-     "tslint-immutable": "^6.0.1",
-     "tslint-loader": "^3.5.4",
-     "tslint-plugin-prettier": "^2.1.0",
-     "tslint-react": "^4.2.0",
-     "typescript": "^3.7.5",
-     "webpack": "^4.41.5",
-     "webpack-bundle-analyzer": "^3.6.0",
-     "webpack-cli": "^3.3.10",
-     "webpack-dev-server": "^3.10.3",
-     "webpack-merge": "^4.2.2"
-   }
+  "dependencies": {
+    "@babel/runtime": "^7.14.6",
+    "connected-react-router": "^6.9.1",
+    "history": "^5.0.0",
+    "lint-staged": "^11.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-intl": "^5.20.4",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.1.3",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/history": "^4.7.9",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-hot-loader": "^4.1.1",
+    "@types/react-intl": "3.0.0",
+    "@types/react-redux": "^7.1.18",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/redux-logger": "^3.0.9",
+    "@types/styled-components": "^5.1.11",
+    "@types/webpack-env": "^1.16.2",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-styled-components": "^1.13.2",
+    "css-loader": "^5.2.6",
+    "dotenv": "^10.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-harddisk-plugin": "^2.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "less-loader": "^10.0.1",
+    "mini-css-extract-plugin": "^2.1.0",
+    "node-sass": "^6.0.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "prettier": "^2.3.2",
+    "sass-loader": "^12.1.0",
+    "script-ext-html-webpack-plugin": "^2.1.5",
+    "simple-progress-webpack-plugin": "^2.0.0",
+    "style-loader": "^3.0.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-immutable": "^6.0.1",
+    "tslint-loader": "^3.5.4",
+    "tslint-plugin-prettier": "^2.3.0",
+    "tslint-react": "^5.0.0",
+    "typescript": "^4.3.5",
+    "webpack": "^5.44.0",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  }
 }
 ```
