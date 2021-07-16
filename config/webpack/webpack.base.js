@@ -33,12 +33,15 @@ module.exports = {
         use: ['react-hot-loader/webpack'],
       },
       {
-        test: /\.(png|jpg|gif|mp4|ogg|svg|woff|woff2|ttf|eot|ico)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[contenthash].[ext]',
-          outputPath: 'images/',
-        },
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|webp|mp4|ogg|woff|woff2|ttf|eot|ico|otf)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][contenthash][ext]'
+        }
       },
     ],
   },
